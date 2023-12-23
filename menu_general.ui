@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>951</width>
+    <height>656</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+    <italic>true</italic>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(85, 255, 127);
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>971</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>location-voiture-tunise.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>951</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Pristina</family>
+      <pointsize>40</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 0, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>Bienvenue  Chez notre agence de location </string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Pristina</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 255, 255);
+font: 18pt &quot;Pristina&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Realiser Par AfLi HaTem</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>951</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuG_stion_De_Parc_Automobile">
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="title">
+     <string>Géstion De Parc Automobile</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <italic>true</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <widget class="QMenu" name="menuSupprimer_voiture">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="title">
+       <string>Supprimer voiture</string>
+      </property>
+      <addaction name="actionSuppression_d_une_voiture_donn_e"/>
+      <addaction name="actionSuppression_des_voitures_d_une_marque_donn_e"/>
+      <addaction name="actionSuppression_des_voitures_age_10_ans"/>
+     </widget>
+     <widget class="QMenu" name="menuModifier_voiture">
+      <property name="geometry">
+       <rect>
+        <x>506</x>
+        <y>171</y>
+        <width>163</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="title">
+       <string>Modifier voiture</string>
+      </property>
+      <addaction name="actionModifier_Prix"/>
+      <addaction name="actionModifier_Couleur"/>
+     </widget>
+     <addaction name="actionAjouter_voiture"/>
+     <addaction name="menuSupprimer_voiture"/>
+     <addaction name="menuModifier_voiture"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_et_Affichage">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="title">
+      <string>Recherche et Affichage </string>
+     </property>
+     <addaction name="actionContenue_du_dicyionnaire_voitures"/>
+     <addaction name="actionRecherche_Par_Matricule"/>
+     <addaction name="actionRecherche_Par_Marque"/>
+     <addaction name="actionRecherche_Par_Couleur"/>
+     <addaction name="actionRecherche_Des_Voitures_Disponibles"/>
+     <addaction name="actionRecherche_Des_Voitures_Lou_e"/>
+     <addaction name="actionRecherche_Des_Voitures_Lou_e_Entre_2_Dates"/>
+    </widget>
+    <addaction name="menuMise_jour"/>
+    <addaction name="menuRecherche_et_Affichage"/>
+   </widget>
+   <widget class="QMenu" name="menuG_stion_Des_Clients">
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="title">
+     <string>Géstion Des Clients</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour_2">
+     <property name="geometry">
+      <rect>
+       <x>575</x>
+       <y>250</y>
+       <width>243</width>
+       <height>116</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <widget class="QMenu" name="menuModifier_Les_Donn_e_D_un_Client">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="title">
+       <string>Modifier Les Donnée D'un Client</string>
+      </property>
+      <addaction name="actionModifier_Adresse"/>
+      <addaction name="actionModifier_T_l_phone"/>
+      <addaction name="actionModifier_Mail"/>
+     </widget>
+     <addaction name="actionAjouter_Un_Nouvel_Client"/>
+     <addaction name="actionSupprimer_Un_Client"/>
+     <addaction name="menuModifier_Les_Donn_e_D_un_Client"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_et_Affichage_2">
+     <property name="title">
+      <string>Recherche et Affichage</string>
+     </property>
+     <addaction name="actionContenus_Du_Dictionnaire_Client"/>
+     <addaction name="actionRecherche_Par_CIN"/>
+    </widget>
+    <addaction name="menuMise_jour_2"/>
+    <addaction name="menuRecherche_et_Affichage_2"/>
+   </widget>
+   <widget class="QMenu" name="menuG_stion_Des_Locations">
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="title">
+     <string>Géstion Des Locations</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour_3">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <italic>true</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Mise à jour</string>
+     </property>
+     <widget class="QMenu" name="menuModifier_Les_Donn_es_D_une_Location">
+      <property name="title">
+       <string>Modifier Les Données D'une Location</string>
+      </property>
+      <addaction name="actionModifier_Date_De_Location"/>
+      <addaction name="actionModifier_Dur_e"/>
+     </widget>
+     <addaction name="actionAjouter_Un_Nouvel_Location"/>
+     <addaction name="actionSupprimer_Une_Location"/>
+     <addaction name="menuModifier_Les_Donn_es_D_une_Location"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_et_Affichage_3">
+     <property name="title">
+      <string>Recherche et Affichage</string>
+     </property>
+     <addaction name="actionContenu_Du_Dictionnaire_Locations"/>
+     <addaction name="actionRecherche_Par_CIN_2"/>
+     <addaction name="actionRecherche_Par_Matricule_2"/>
+     <addaction name="actionRecherche_Par_Date_Donn_e"/>
+     <addaction name="actionRecherche_Par_Dur_e_De_Location"/>
+     <addaction name="actionRecherche_Des_Locations_Entre_2_Dates_Donn_e"/>
+    </widget>
+    <addaction name="menuMise_jour_3"/>
+    <addaction name="menuRecherche_et_Affichage_3"/>
+   </widget>
+   <widget class="QMenu" name="menuLes_Fichiers">
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Les Fichiers</string>
+    </property>
+    <addaction name="actionEnregistrement_Fichiers_Voitures"/>
+    <addaction name="actionR_cup_ration_fichier_Voitures"/>
+    <addaction name="actionEnregistrement_Fichier_Clients"/>
+    <addaction name="actionR_cup_ration_Fichier_Clients"/>
+    <addaction name="actionEbregistrement_Fichier_Locations"/>
+    <addaction name="actionR_cuperation_Fichier_Locations"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuEnonc_e">
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>true</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Enoncée</string>
+    </property>
+    <addaction name="actionOuvrir"/>
+   </widget>
+   <addaction name="menuG_stion_De_Parc_Automobile"/>
+   <addaction name="menuG_stion_Des_Clients"/>
+   <addaction name="menuG_stion_Des_Locations"/>
+   <addaction name="menuLes_Fichiers"/>
+   <addaction name="menuEnonc_e"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAjouter_voiture">
+   <property name="text">
+    <string>Ajouter voiture</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+  </action>
+  <action name="actionSuppression_d_une_voiture_donn_e">
+   <property name="text">
+    <string>Suppression d'une voiture donnée</string>
+   </property>
+  </action>
+  <action name="actionSuppression_des_voitures_d_une_marque_donn_e">
+   <property name="text">
+    <string>Suppression des voitures d'une marque donnée</string>
+   </property>
+  </action>
+  <action name="actionSuppression_des_voitures_age_10_ans">
+   <property name="text">
+    <string>Suppression des voitures (age &gt; 10 ans)</string>
+   </property>
+  </action>
+  <action name="actionModifier_Prix">
+   <property name="text">
+    <string>Modifier Prix</string>
+   </property>
+  </action>
+  <action name="actionModifier_Couleur">
+   <property name="text">
+    <string>Modifier Couleur</string>
+   </property>
+  </action>
+  <action name="actionContenue_du_dicyionnaire_voitures">
+   <property name="text">
+    <string>Contenue du dictionnaire voitures </string>
+   </property>
+  </action>
+  <action name="actionRecherche_Par_Matricule">
+   <property name="text">
+    <string>Recherche Par Matricule</string>
+   </property>
+  </action>
+  <action name="actionRecherche_Par_Marque">
+   <property name="text">
+    <string>Recherche Par Marque</string>
+   </property>
+  </action>
+  <action name="actionRecherche_Par_Couleur">
+   <property name="text">
+    <string>Recherche Par Couleur</string>
+   </property>
+  </action>
+  <action name="actionRecherche_Des_Voitures_Disponibles">
+   <property name="text">
+    <string>Recherche Des Voitures Disponibles </string>
+   </property>
+  </action>
+  <action name="actionRecherche_Des_Voitures_Lou_e">
+   <property name="text">
+    <string>Recherche Des Voitures Louée</string>
+   </property>
+  </action>
+  <action name="actionRecherche_Des_Voitures_Lou_e_Entre_2_Dates">
+   <property name="text">
+    <string>Recherche Des Voitures Louée Entre 2 Dates</string>
+   </property>
+  </action>
+  <action name="actionAjouter_Un_Nouvel_Client">
+   <property name="text">
+    <string>Ajouter Un Nouvel Client</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+  </action>
+  <action name="actionSupprimer_Un_Client">
+   <property name="text">
+    <string>Supprimer Un Client</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+  </action>
+  <action name="actionModifier_Adresse">
+   <property name="text">
+    <string>Modifier Adresse</string>
+   </property>
+  </action>
+  <action name="actionModifier_T_l_phone">
+   <property name="text">
+    <string>Modifier Téléphone</string>
+   </property>
+  </action>
+  <action name="actionModifier_Mail">
+   <property name="text">
+    <string>Modifier Mail</string>
+   </property>
+  </action>
+  <action name="actionContenus_Du_Dictionnaire_Client">
+   <property name="text">
+    <string>Contenu Du Dictionnaire Client</string>
+   </property>
+  </action>
+  <action name="actionRecherche_Par_CIN">
+   <property name="text">
+    <string>Recherche Par CIN</string>
+   </property>
+  </action>
+  <action name="actionAjouter_Un_Nouvel_Location">
+   <property name="text">
+    <string>Ajouter Un Nouvel Location</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_Une_Location">
+   <property name="text">
+    <string>Supprimer Une Location</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+  </action>
+  <action name="actionModifier_Date_De_Location">
+   <property name="text">
+    <string>Modifier Date De Location</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+  </action>
+  <action name="actionModifier_Dur_e">
+   <property name="text">
+    <string>Modifier Durée</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+  </action>
+  <action name="actionContenu_Du_Dictionnaire_Locations">
+   <property name="text">
+    <string>Contenu Du Dictionnaire Locations</string>
+   </property>
+  </action>
+  <action name="actionRecherche_Par_CIN_2">
+   <property name="text">
+    <string>Recherche Par CIN</string>
+   </property>
+  </action>
+  <action name="actionRecherche_Par_Matricule_2">
+   <property name="text">
+    <string>Recherche Par Matricule</string>
+   </property>
+  </action>
+  <action name="actionRecherche_Par_Date_Donn_e">
+   <property name="text">
+    <string>Recherche Par Date Donnée</string>
+   </property>
+  </action>
+  <action name="actionRecherche_Par_Dur_e_De_Location">
+   <property name="text">
+    <string>Recherche Par Durée De Location</string>
+   </property>
+  </action>
+  <action name="actionRecherche_Des_Locations_Entre_2_Dates_Donn_e">
+   <property name="text">
+    <string>Recherche Des Locations Entre 2 Dates Donnée</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_Fichiers_Voitures">
+   <property name="text">
+    <string>Enregistrement Fichiers Voitures</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>true</italic>
+     <bold>false</bold>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionR_cup_ration_fichier_Voitures">
+   <property name="text">
+    <string>Récupération fichier Voitures</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionEnregistrement_Fichier_Clients">
+   <property name="text">
+    <string>Enregistrement Fichier Clients</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionR_cup_ration_Fichier_Clients">
+   <property name="text">
+    <string>Récupération Fichier Clients</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionEbregistrement_Fichier_Locations">
+   <property name="text">
+    <string>Enregistrement Fichier Locations</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionR_cuperation_Fichier_Locations">
+   <property name="text">
+    <string>Récuperation Fichier Locations</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionquitter">
+   <property name="text">
+    <string>quitter</string>
+   </property>
+  </action>
+  <action name="actionquitter_2">
+   <property name="text">
+    <string>quitter</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionOuvrir">
+   <property name="text">
+    <string>Ouvrir</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
